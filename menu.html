@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{ list-style-type: none;
+            padding: 0;}
+         
+     /*----------추가한 코드---------*/
+            li{
+                padding:0px;
+            }
+            #menu_wrap{
+                display: flex;
+                flex-direction: row;  /*정렬모양 = 행*/
+                flex-wrap: nowrap;
+                justify-content: space-evenly; /*space=evenly = 균등정렬*/
+                background-color: yellow;
+                width:500px;
+                line-height: 50px;
+            }
+            .content_ul{
+                display:none; /*content_ul의 기본 display형태는 보이지 않음*/
+            }
+            .content_li{
+                color:black;  /*기존 content_li의 text색상 = black*/
+            }
+            .menu_li:hover>.content_ul{ /*하지만 menu_li의 마우스를 hover 했을때 display의 상태를 block로 보이게 함*/
+                display:block;
+            }
+            .menu_li:hover{     /*menu_li에 마우스 hover했을때 호버링 한 menu_li의 color = */
+                color:violet;
+            }
+            .menu_li:hover .content_li:hover{ /*menu_li를 호버하면서 content_li를 호버했을때의 content_li의 색상*/
+                color:violet;
+            }
+        /*--------이곳에 CSS 코드를 추가하시오 --------*/
+
+    </style>
+</head>
+<body>
+    <ul id="menu_wrap">
+        <li class="menu_li">메뉴
+            <ul class="content_ul">
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+            </ul>
+        </li>
+        <li class="menu_li">메뉴
+            <ul class="content_ul">
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+            </ul>
+        </li>
+        <li class="menu_li">메뉴
+            <ul class="content_ul">
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+            </ul>
+        </li>
+        <li class="menu_li">메뉴
+            <ul class="content_ul">
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+            </ul>
+        </li>
+        <li class="menu_li">메뉴
+            <ul class="content_ul">
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+                <li class="content_li">메뉴</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
