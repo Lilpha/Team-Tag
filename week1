@@ -1,0 +1,87 @@
+<h1> 태그팀 1주차 과제</h1>
+<hr>
+<ul>
+    <li> 리스트 태그 (ul, ol, dl)
+        <ul>
+            <li> li</li>
+            <li>dt</li>
+            <li>dd</li></ul>
+    </li>
+    <li>테이블(table)</li>
+<li>폼(form)</li>
+<li>입력 데이터(input)</li>
+<li>select</li>
+<li>fieldset</li>
+<li>datalist</li>
+<li>label</li>
+<li>block, inline 태그</li>
+ <li>시맨틱 태그</li>
+</ul>
+<br>
+ <form action=""><fieldset>
+    <legend>태그팀 신청서</legend>
+   
+        <table border="1">
+            <thead>
+                <tr>
+                <th><label for="team">씨애랑 소속 팀</label> </th><th> <input type="text" name="" id="team"></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><label for="name">이름</label> </th><th><input type="text" name="" id="name"> </th>
+                </tr>
+                <tr>
+                    <th>학년</th>  <th><div align = "left"><select name="grade">
+                        <option value="1" selected>1학년</option>
+                        <option value="2">2학년</option>
+                        <option value="3">3학년</option>
+                        <option value="4">4학년</option>
+                          </select>
+                        </div>
+                    </th>
+                </tr>
+            <tr> 
+                <th> <label for="major">학과</label> </th> 
+                <th><input type="text" list="majors" id="major">
+                <datalist id="majors">
+                <option value="소프트웨어 융합대학">
+                <option value="빅데이터 전공">
+                <option value="콘텐츠 IT 전공">
+                <option value="스마트IoT 전공">
+                </datalist>
+                </th>
+            </tr>
+            <tr> <th> 생년월일 </th> <th><div align ="left"><input type="date"></div></th></tr>
+            <tr> <th> 성별 </th> <th>
+                <label for="male">남성</label><input type="radio" name="gender" id="male" >
+                <label for="female">여성</label><input type="radio" name="gender" id="female" >
+            </th></tr>
+            <tr> <th> <label for="mail">e-mail</label> </th> <th><input type="text" name="" id="mail"></th></tr>
+            <tr>
+                 <th> 개발 분야 </th> 
+                 <th><div align ="left">
+                        <select name="">
+                            <option value="">front-end</option>
+                            <option value="">back-end</option>
+                            <option value="">full-stack</option>
+                        </select>
+                    </div>
+                   </th>
+               </tr>
+            </tbody>
+
+            
+            <tfoot>
+                <tr>
+                    <th><div align ="left"><input type="reset" value="취소"></div></th>
+                    <th><div align ="left"><input type="submit"value="보내기"></div></th>
+                </tr>
+
+            </tfoot>
+        </table>
+        </fieldset>
+</form>
+<br>
+<p>재미있는 씨애랑 <strong>과제시간</strong></p>
+<p><em>열심히 해보아요.</em> </p>
