@@ -1,0 +1,84 @@
+html {
+	height: 100%;
+}
+
+body {
+    background-color: #F5F5F5;  
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    width:200px;
+    border-radius: 10px;
+    border-color:antiquewhite;
+    text-align: center;
+    height: 23px;
+    opacity: 0.8;
+    margin-top:10px;
+}
+input:focus{
+    border-color: aqua;
+    outline: none;
+    transform : scale(1.4);
+    transition-duration: 0.5s;
+}
+input:not(focus){
+    transform : scale(1.0);
+    transition-duration: 0.5s;
+}
+
+#todo-list{
+    width:300px;
+    list-style-type: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 0;
+    background-color: aquamarine;
+    opacity: 0.8;
+}
+
+#todo-list li{
+    margin: 10px auto;
+    padding:10px;
+    width:200px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#todo-list li:hover{
+    transform : scale(1.2);
+    transition-duration: 0.5s;
+}
+#todo-list li:not(hover){
+    transform : scale(1.0);
+    transition-duration: 0.5s;
+}
+
+#todo-list span{
+    margin-right:10px;
+}
+
+#todo-list button{
+    border-radius: 20px;
+    float:right;
+    border:2px solid rgba(243, 176, 32, 0.842);
+    background-color:beige;
+}
+
+#todo-list button:hover{
+    background-color: red;
+    color:white;
+    transition-duration: 0.5s;
+}
+
+#todo-list button:not(hover){
+    transition-duration: 0.5s;
+}
+
+
